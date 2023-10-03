@@ -1,0 +1,68 @@
+/* Establecer un tamaño de fuente base para el documento utilizando rem */
+body {
+  font-size: 1rem; /* 1rem es el tamaño de fuente base */
+  font-family: Arial, sans-serif;
+  background-color: #FFD700; /* Color de fondo amarillo */
+}
+
+/* Encabezado */
+header {
+  background-color: #FF6347; /* Color de fondo rojo coral */
+  color: #FFFFFF; /* Texto en color blanco */
+  padding: 1rem; /* 1rem de padding */
+}
+
+h1 {
+  font-size: 2.5em; /* 2.5em es 2.5 veces el tamaño de fuente base en em */
+  margin: 0.5em 0; /* 0.5em de margen arriba y abajo */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2em; /* 2em de margen a la derecha */
+}
+
+/* Contenido principal */
+.main-content {
+  width: 70vw; /* 70vw es el 70% del ancho del viewport */
+  margin: 2em; /* 2em de margen en todos los lados */
+}
+
+.pizza {
+  margin-bottom: 2em; /* 2em de margen inferior */
+}
+
+h2 {
+  font-size: 1.5em; /* 1.5em es 1.5 veces el tamaño de fuente base en em */
+  margin: 1em 0; /* 1em de margen arriba y abajo */
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 30vmin; /* 30vmin es el 30% del viewport más pequeño (ancho o alto) */
+  padding: 1em; /* 1em de padding */
+  background-color: #FF6347; /* Fondo rojo coral para la barra lateral */
+  color: #FFFFFF; /* Texto en color blanco */
+}
+
+.widget {
+  margin-bottom: 2em; /* 2em de margen inferior */
+}
+
+h3 {
+  font-size: 1.2em; /* 1.2em es 1.2 veces el tamaño de fuente base en em */
+  margin: 0.5em 0; /* 0.5em de margen arriba y abajo */
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #333; /* Fondo gris oscuro para el pie de página */
+  color: lightyellow;
+  padding: 1em; /* 1em de padding */
+}
