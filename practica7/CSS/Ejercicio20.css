@@ -1,0 +1,125 @@
+/*Hace que la primera linea de cada "p" 
+tenga el texto color rosa*/
+
+p::first-line {
+  color: rgb(208, 76, 255);
+}
+
+/*Aplica estilos solo a la primera letra de cada
+"p"*/
+
+p::first-letter {
+  font-size: 40px;
+  color: rgb(255, 192, 203);
+}
+
+/*Agrega "contenido" antes del el contenido original
+en el caso de "h1" y despues en el caso de "p"*/
+
+h1::before {
+  content: "Css - ";
+}
+p::after {
+  content: ".";
+}
+
+/*El contenido de "p" que sea seleccionado
+por el usuario tendra el fondo "rosa"*/
+
+p::selection {
+  background: aquamarine;
+}
+
+/*Selecciona los segundos hijos de tag "tr" del
+elemento en el que estan contenidos, y les aplica 
+un color de fondo rojo*/
+
+tr:nth-child(2n) {
+  background: rgb(70%, 15%, 18%);
+}
+
+/*Selecciona al segundo hijo "p" de "section",
+contando a partir del ultimo "p"*/
+
+section p:nth-last-child(2n) {
+  background: rgb(70%, 95%, 18%);
+}
+
+/*El "td" que este vacio tendra color de
+fondo negro*/
+
+td:empty {
+  background: black;
+}
+
+/*Asigna estilos a los "li" dentro de "ul"*/
+
+ul li {
+  border-bottom: 1px dotted #000;
+  font-size: 50px;
+}
+
+/*El primer hijo "li" tendra los
+estilos definidos abajo*/
+
+li:first-child {
+  border-top: 1px dotted #af0;
+  background-color: #af0;
+  border-bottom: none;
+  list-style-type: square;
+}
+
+/*El ultimo hijo "li" tendra los
+estilos definidos abajo*/
+
+li:last-child {
+  color: #ff0;
+  list-style-type: square;
+}
+
+/*Selecciona el elemento numero 2 del tipo "p"*/
+
+p:nth-of-type(2) {
+  background: rgb(255, 165, 0);
+}
+
+/*Selecciona el numero 2 del tipo "em"
+contado desde el ultimo hacia atras*/
+
+em:nth-last-of-type(2) {
+  background: rgb(255, 160, 122);
+}
+
+/* Estilo para enlaces no visitados */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo para enlaces visitados */
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+/* Estilo para enlaces cuando el puntero está sobre ellos */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Estilo para enlaces activos (cuando se hace clic en ellos) */
+a:active {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Estilo para elementos enfocados (cuando se hace clic en ellos o se enfocan con el teclado) */
+a:focus {
+  outline: 2px solid orange;
+}
+
+/* Estilo para elementos con el atributo "lang" */
+em:lang(廊) {
+  color: brown;
+}
