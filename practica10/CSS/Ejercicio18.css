@@ -1,0 +1,72 @@
+/* Estilos globales para resetear márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+
+/* Estilos para los elementos <span> */
+span {
+  align-self: start; /* Alineación vertical de elementos <span> */
+}
+
+/* Estilos para el encabezado (#header) */
+#header {
+  height: 29vh; /* Altura del encabezado */
+  background-color: green;
+  display: flex; /* Hacer que los elementos hijos sean flexibles */
+  justify-content: center; /* Centrar horizontalmente los elementos hijos */
+  align-items: center; /* Centrar verticalmente los elementos hijos */
+  margin-bottom: 1vh; /* Márgen inferior del encabezado */
+}
+
+/* Estilos para la navegación (#nav) */
+#nav {
+  height: 50%; /* Altura de la navegación */
+  width: 95%; /* Ancho de la navegación */
+  margin-top: 4rem; /* Márgen superior de la navegación */
+  margin-right: 6rem; /* Márgen derecho de la navegación */
+  background-color: yellow;
+}
+
+/* Estilos para el contenedor (#contenedor) */
+#contenedor {
+  height: 48vh; /* Altura del contenedor */
+  display: flex; /* Hacer que los elementos hijos sean flexibles */
+  justify-content: space-evenly; /* Distribuir uniformemente los elementos hijos horizontalmente */
+  align-items: center; /* Centrar verticalmente los elementos hijos */
+  margin-bottom: 2vh; /* Márgen inferior del contenedor */
+}
+
+/* Estilos para el aside (#aside) */
+#aside {
+  width: 49%; /* Ancho del aside */
+  height: 100%; /* Altura del aside */
+  background-color: green;
+}
+
+/* Estilos para la sección principal (#section) */
+#section {
+  width: 49%; /* Ancho de la sección principal */
+  height: 100%; /* Altura de la sección principal */
+  background-color: green;
+  display: flex; /* Hacer que los elementos hijos sean flexibles */
+  flex-direction: column; /* Apilar verticalmente los elementos hijos */
+  justify-content: space-around; /* Distribuir uniformemente los elementos hijos verticalmente */
+  align-items: center; /* Centrar horizontalmente los elementos hijos */
+}
+
+/* Estilos para los elementos con la clase .article */
+.article {
+  height: 29%; /* Altura de los elementos .article */
+  width: 90%; /* Ancho de los elementos .article */
+  margin-top: 3rem; /* Márgen superior de los elementos .article */
+  margin-right: 3rem; /* Márgen derecho de los elementos .article */
+  background-color: yellow;
+}
+
+/* Estilos para el pie de página (#footer) */
+#footer {
+  height: 20vh; /* Altura del pie de página */
+  background-color: green;
+}

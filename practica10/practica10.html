@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 10</title>
+</head>
+<body>
+        <!-- Jose Antonio Lopez Ramos - Grupo: 372 -->
+
+    <h1 style="text-align:center"> Mi primer formulario</h1>
+    <form action="" method="get" style="display:flex; flex-direction: column; align-items: center;">
+        Nombre: 
+        <input type="text" name="nombre" maxlength="10" placeholder="No mayor a 10 caracteres"/>
+        Edad: 
+        <input type="number" name="edad" min="10" max="18"/>
+        Sexo:
+        <select name="genero">
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+        </select>
+        <input type="radio" name="seleccion"/>Leer
+        <input type="radio" name="seleccion"/>Caminar
+        <input type="checkbox" name="acuerdo"/>De acuerdo</br></br>
+        Comentarios: <textarea rows="6" name="texto"></textarea>
+        <br/>
+        <input type="submit" name="Enviar" />
+    </form>
+</body>
+</html>
