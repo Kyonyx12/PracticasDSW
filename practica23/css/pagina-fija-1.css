@@ -1,0 +1,36 @@
+div#cabeza {
+    width: 750px; 
+    padding: 5px;
+    border: red solid 1px; 
+    }
+div#lateral {
+    width: 100px; 
+    padding: 5px;
+    height: 100%; 
+    float: left; 
+    border: blue solid 1px; 
+    }
+div#lateral ul{
+    padding-left: 16px;
+    border: green dotted 1px; 
+    }
+div#lateral ul li {
+    margin-left: 0; 
+    }
+div#contenido {
+    width: 638px; 
+    margin-left: 112px;
+    padding: 5px; 
+    border: green solid 1px; 
+    }
+div#contenido p {
+    text-align: justify; 
+    }
+div#pie {
+    width: 750px; 
+    padding: 5px;           
+    border: red solid 1px; 
+    }
+div.borra-flotacion {
+    clear: both; 
+    }    
