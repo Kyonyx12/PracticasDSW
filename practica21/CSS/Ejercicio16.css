@@ -1,0 +1,41 @@
+* {
+  background: lightyellow;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+header {
+  height: 5vh;
+  background: olivedrab;
+  margin-bottom: 2.5vh;
+}
+nav {
+  height: 5vh;
+  background: olivedrab;
+  margin-bottom: 2.5vh;
+}
+#container {
+  display: flex;
+  height: 69.6vh;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+}
+article {
+  height: 90%;
+}
+article {
+  width: 20%;
+  background: teal;
+}
+.article2 {
+  width: 55%;
+  background: yellow;
+}
+footer {
+  height: 15vh;
+  background: hotpink;
+}
