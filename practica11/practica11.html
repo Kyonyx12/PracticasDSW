@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi primer formulario</title>
+</head>
+<body>
+        <!-- Jose Antonio Lopez Ramos - Grupo: 372 -->
+
+    <h1 style="text-align:center">Formulario de registro - Mi primer formulario</h1>
+    <form action="" method="get" style="display:flex; flex-direction: column; align-items: center;">
+        Nombre: 
+        <input type="text" name="nombre" max-length="50"/>
+        Apellido Paterno: 
+        <input type="text" name="apellido-paterno" max-length="50"/>
+        Apellido Materno: 
+        <input type="text" name="apellido-materno" max-length="50"/>
+        Sexo:
+        <select name="sexo">
+            <option value="femenino">Hombre</option>
+            <option value="masculino">Mujer</option>
+        </select>
+        Correo:<input type="text" name="correo"/>
+        Deseo recibir informacion sobre novedades y ofertas
+        <input type="checkbox" checked/>
+        Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos
+        <input type="checkbox"/>
+
+        <input type="submit" name="Enviar" />
+    </form>
+</body>
+</html>
