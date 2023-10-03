@@ -1,0 +1,41 @@
+* {
+  background: springgreen;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+#header {
+  height: 5vh;
+  background: peachpuff;
+  margin-bottom: 2.5vh;
+}
+#nav {
+  height: 5vh;
+  background: greenyellow;
+  margin-bottom: 2.5vh;
+}
+#contenedor {
+  display: flex;
+  height: 69.6vh;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+}
+.normal {
+  height: 90%;
+  width: 20%;
+  background: aquamarine;
+}
+
+#contenido {
+  height: 90%;
+  width: 55%;
+  background: peru;
+}
+#footer {
+  height: 15vh;
+  background: pink;
+}
