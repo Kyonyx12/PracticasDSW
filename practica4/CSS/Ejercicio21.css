@@ -1,0 +1,107 @@
+        /* Estilos globales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Establece la altura mínima de la ventana del navegador */
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1; /* Esto hace que el contenido ocupe el espacio restante */
+        }
+
+        /* Sección de menú */
+        .menu-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Seleccionar el segundo elemento de la lista */
+li:nth-child(2) {
+    color: red;
+  }
+  
+  /* Seleccionar el tercer elemento desde el final de la lista */
+  li:nth-last-child(3) {
+    background-color: yellow;
+  }
+
+  /* Seleccionar divs vacíos */
+div:empty {
+    border: 1px solid blue;
+  }
+
+  /* Seleccionar el primer párrafo dentro del div */
+div p:first-child {
+    font-weight: bold;
+  }
+  
+  /* Seleccionar el último párrafo dentro del div */
+  div p:last-child {
+    font-style: italic;
+  }
+
+  /* Cambiar el color del enlace al pasar el ratón por encima */
+a:hover {
+    color: green;
+  }
+  
+  /* Cambiar el fondo del botón cuando se hace clic */
+  button:active {
+    background-color: red;
+  }
+  
+  /* Cambiar el borde del campo de entrada cuando tiene el foco */
+  input:focus {
+    border-color: blue;
+  }
+
+  /* Seleccionar todos los párrafos en español */
+p:lang(es) {
+    font-weight: bold;
+  }
+  
+  /* Seleccionar todos los párrafos en francés */
+  p:lang(fr) {
+    font-style: italic;
+  }
+  
