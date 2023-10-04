@@ -20,8 +20,8 @@
 
 // alert(array[3]);
 
-var numero1 = parseInt(prompt("Ingrese el primer numero: "));
-var numero2 = parseInt(prompt("Ingrese el segundo numero: "));
+var numero1 = parseInt(prompt("Ingrese el primer numero "));
+var numero2 = parseInt(prompt("Ingrese el segundo numero "));
 
 var suma = numero1 + numero2;
 var resta = numero1 - numero2;
