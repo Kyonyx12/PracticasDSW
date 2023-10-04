@@ -20,12 +20,30 @@
 
 // alert(array[3]);
 
-var numero1 = parseInt(prompt("Ingrese el primer numero: "));
-var numero2 = parseInt(prompt("Ingrese el segundo numero: "));
+// var numero1 = parseInt(prompt("Ingrese el primer numero: "));
+// var numero2 = parseInt(prompt("Ingrese el segundo numero: "));
 
-var suma = numero1 + numero2;
-var resta = numero1 - numero2;
-var multi = numero1 * numero2;
-var divi = numero1 / numero2;
+// var suma = numero1 + numero2;
+// var resta = numero1 - numero2;
+// var multi = numero1 * numero2;
+// var divi = numero1 / numero2;
+
+// alert("La suma de los numeros es: "+suma+" \nLa resta de los numeros es: "+resta+" \nLa multiplicacion de los numeros es: "+multi+" \nLa division de los numeros es: "+divi);
+
+var valores = [true,10,false,"codigo","herramientas",7];
+
+if(valores[3]>valores[4]){
+    alert("El texto mayor es: "+valores[3]);
+} else {
+    alert("El texto mayor es: "+valores[4]);
+}
+
+alert(valores[0] != valores[2]);
+alert(valores[0] == valores[2]);
+
+var suma = valores[1] + valores[5];
+var resta = valores[1] - valores[5];;
+var multi = valores[1] * valores[5];;
+var divi = valores[1] / valores[5];;
 
 alert("La suma de los numeros es: "+suma+" \nLa resta de los numeros es: "+resta+" \nLa multiplicacion de los numeros es: "+multi+" \nLa division de los numeros es: "+divi);
