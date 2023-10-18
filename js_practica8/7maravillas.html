@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/7maravillas.css">
+    <title>7 MARAVILLAS DEL MUNDO</title>
+</head>
+<body>
+        <!-- Inicio del cuerpo de la página -->
+
+    <!-- Div para la cabecera del juego -->
+    <header>7 MARAVILLAS DEL MUNDO</header>
+
+    <!-- Título del juego -->
+    <h1>¿Qué Maravilla del mundo es?</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <!-- Mensaje de la pantalla inicial -->
+        <p>¿A qué maravilla pertenece la imagen?</p>
+        <!-- Botón para iniciar el juego -->
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <!-- Imagen de la maravilla a adivinar -->
+        <img src="img/chichen-itza.svg" alt="" id="imgMaravilla">
+        
+        <!-- Div que contiene las opciones para adivinar -->
+        <div class="opciones">
+            <!-- Opción 1 -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l0">A</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <!-- Letra de la opción -->
+                <div class "letra" id="l1">B</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l2">C</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <!-- Número de respuestas correctas -->
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <!-- Número de respuestas incorrectas -->
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <!-- Botón para volver al inicio -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>7 MARAVILLAS DEL MUNDO</footer>
+    
+    <!-- Script de JavaScript que controla el juego -->
+    <script src="js/7maravillas.js"></script>
+</body>
+</html>
