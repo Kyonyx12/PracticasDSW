@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/pokemones.css">
+    <title>¿Quien es ese pokemon?</title>
+</head>
+<body>
+        <!-- Jose Antonio Lopez Ramos - G372-->
+        
+        <!-- Inicio del cuerpo de la página -->
+
+    <!-- Div para la cabecera del juego -->
+    <header>¿Quien es ese pokemon?</header>
+
+    <!-- Título del juego -->
+    <h1>¿Quien es ese pokemon?</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <!-- Mensaje de la pantalla inicial -->
+        <p>¿Quien es ese pokemon?</p>
+        <!-- Botón para iniciar el juego -->
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+    </div>
+
+    <div id="redirigir">
+        <!-- Mensaje de la pantalla inicial -->
+        <p>7 Maravillas</p>
+        <button class="btn" onclick="redirigir()">JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <!-- Imagen de la maravilla a adivinar -->
+        <img src="img/pikachu.svg" alt="" id="imgMaravilla" height="250px" width="250px">
+        
+        <!-- Div que contiene las opciones para adivinar -->
+        <div class="opciones">
+            <!-- Opción 1 -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l0">A</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l1">B</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+
+             <!-- Opción 3 -->
+             <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l2">C</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+
+            <!-- Opción 4 -->
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <!-- Letra de la opción -->
+                <div class="letra" id="l3">D</div>
+                <!-- Nombre de la opción -->
+                <div class="nombre" id="n3">OPCION D</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <!-- Número de respuestas correctas -->
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <!-- Número de respuestas incorrectas -->
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <!-- Botón para volver al inicio -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>¿Quien es ese pokemon?</footer>
+    
+    <!-- Script de JavaScript que controla el juego -->
+    <script src="js/pokemones.js"></script>
+    <script>
+        function redirigir(){
+            window.location="7maravillas.html";
+        }
+    </script>
+</body>
+</html>
