@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Practica 29</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 align="center" style="color: white; margin-top: 5rem">Registro</h1>
+    <div id="recuadro">
+      <form
+        action="php/logica.php"
+        method="POST"
+        onsubmit="return validarDatos();"
+        enctype="multipart/form-data"
+        id="formulario"
+      >
+        <table>
+          <tr>
+            <td>
+              <label for="nombre"
+                >NOMBRE: <br /><input
+                  type="text"
+                  name="nombre"
+                  value=""
+                  required
+                  id="nombre"
+              /></label>
+            </td>
+            <td>
+              <label for="apellidos"
+                >APELLIDOS: <br /><input
+                  type="text"
+                  name="apellidos"
+                  value=""
+                  required
+                  id="apellidos"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="edad"
+                >EDAD: <br /><input
+                  type="number"
+                  name="edad"
+                  value=""
+                  required
+                  id="edad"
+                  min="18"
+                  max="60"
+                  style="width: 168px"
+              /></label>
+            </td>
+            <td>
+              <label for="sexo"
+                >SEXO: <br />
+                <select name="sexo" style="width: 177px" required>
+                  <option selected>FEMENINO</option>
+                  <option>MASCULINO</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ciudad"
+                >CIUDAD: <br />
+                <select
+                  id="ciudad"
+                  name="ciudad"
+                  onchange="habilitar()"
+                  style="width: 177px"
+                  required
+                >
+                  <option>ENSENADA</option>
+                  <option>TIJUANA</option>
+                  <option>MEXICALI</option>
+                  <option>TECATE</option>
+                  <option>ROSARITO</option>
+                </select>
+              </label>
+            </td>
+            <td>
+              <label for="celular"
+                >CELULAR: (10 DIGITOS)<br /><input
+                  type="tel"
+                  name="celular"
+                  value=""
+                  maxlength="10"
+                  required
+                  id="celular"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="transporte"
+                >TRANSPORTE:
+                <select
+                  id="transporte"
+                  name="transporte"
+                  style="width: 177px"
+                  required
+                >
+                  <option selected>NO</option>
+                  <option>SI</option>
+                </select>
+              </label>
+            </td>
+            <td>
+              <label for="comentarios"
+                >COMENTARIOS: <br />
+                <textarea
+                  name="comentarios"
+                  rows="4"
+                  cols="22"
+                  required
+                  id="comentarios"
+                ></textarea>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="camisa"
+                >CAMISA: <br />
+                <select
+                  id="camisa"
+                  name="camisa"
+                  onchange="aparecer()"
+                  style="width: 177px"
+                  required
+                >
+                  <option>SI</option>
+                  <option selected>NO</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <tr id="talla-tr" class="talla">
+            <td>
+              <label for="talla"
+                >TALLA: <br />
+                <select name="talla" style="width: 177px">
+                  <option>CHICA</option>
+                  <option>MEDIANA</option>
+                  <option>GRANDE</option>
+                  <option selected>NINGUNA</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+        </table>
+        <button type="submit" name="button">ENVIAR</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+      function validarDatos() {
+        var nombre = document.getElementById("nombre").value;
+        var apellidos = document.getElementById("apellidos").value;
+        var edad = document.getElementById("edad").value;
+
+        var regex = /^[A-Za-z]+$/;
+        var regexEdad = /^\d+$/;
+
+        if (!regex.test(nombre)) {
+          alert("El campo NOMBRE solo debe contener letras.");
+          document.getElementById("nombre").value = "";
+          return false; // Evita el envío del formulario
+        }
+
+        if (!regex.test(apellidos)) {
+          alert("El campo APELLIDOS solo debe contener letras.");
+          document.getElementById("apellidos").value = "";
+          return false;
+        }
+
+        if (!regexEdad.test(edad)) {
+          alert("El campo EDAD solo debe contener números.");
+          document.getElementById("edad").value = "";
+          return false;
+        }
+
+        convertirAMayusculas();
+        return true;
+      }
+
+      function convertirAMayusculas() {
+        var nombre = document.getElementById("nombre");
+        var apellidos = document.getElementById("apellidos");
+        var comentarios = document.getElementById("comentarios");
+
+        nombre.value = nombre.value.toUpperCase();
+        apellidos.value = apellidos.value.toUpperCase();
+        comentarios.value = comentarios.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
