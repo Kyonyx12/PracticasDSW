@@ -1,0 +1,94 @@
+/* Estilos para el cuerpo de la página */
+body {  
+  box-shadow: none; /* Quita la sombra */
+  backdrop-filter: blur(200px); /* Aplica un efecto de desenfoque */
+}
+
+/* Estilos para el contenedor principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87.5vh; /* Altura del contenedor principal */
+  background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+}
+
+/* Estilos para el contenedor con efecto glassmorphism */
+.glass-container {
+  border-radius: 10px; /* Radio del borde */
+  margin-bottom: auto; /* Margen inferior automático */
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el texto del párrafo */
+p {
+  color: #fff; /* Color del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+/* Estilos para los campos de entrada de texto */
+input {    
+  border-width: 0; /* Ancho del borde */
+  padding-block: 0; /* Relleno vertical */
+  padding-inline: 0; /* Relleno horizontal */
+}
+
+/* Estilos para el botón de borrar */
+.button-borrar {
+  padding: 5px 20px; /* Relleno del botón */
+  background: red; /* Fondo rojo */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  cursor: pointer; /* Cursor */
+}
+
+/* Estilos para el botón de modificar */
+.button-modificar {
+  padding: 5px 20px; /* Relleno del botón */
+  background: blue; /* Fondo azul */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  cursor: pointer; /* Cursor */
+}
+
+/* Estilos para el botón de modificar (seguro) */
+.button-modificar-seguro {
+  padding: 5px 22px; /* Relleno del botón */
+  background: blue; /* Fondo azul */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  cursor: pointer; /* Cursor */
+  font-size: medium; /* Tamaño de fuente */
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Colapso de borde */
+  text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para las celdas de encabezado y datos de la tabla */
+th, td {
+  padding: 5px; /* Relleno */
+  border: 1px solid #fff; /* Borde */
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+  font-weight: bold; /* Peso del texto */
+}
+
+

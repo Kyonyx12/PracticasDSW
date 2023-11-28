@@ -1,0 +1,80 @@
+/* Estilos para el contenedor principal */
+main {
+  height: 88vh; /* Altura del 88% del viewport */
+  display: flex; /* Usa el modelo de caja flexible */
+  flex-direction: column; /* Ordena los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilos para el título principal */
+h1 {
+  margin-top: 3rem; /* Margen superior de 3 unidades */
+  margin-bottom: 14rem; /* Margen inferior de 14 unidades */
+}
+
+/* Estilos para el span */
+span {
+  font-size: 1rem; /* Tamaño de fuente de 1 rem */
+  position: fixed; /* Posición fija */
+  margin-left: 6.5rem; /* Margen izquierdo de 6.5 unidades */
+  border-radius: 5px; /* Borde redondeado */
+  box-shadow: inset 10px 20px 700px rgba(0, 0, 0, 0.75); /* Sombra interna */
+}
+
+/* Estilos para las tarjetas */
+.card {
+  height: 200px; /* Altura de las tarjetas */
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo con transparencia */
+  color: white; /* Color del texto */
+  font-size: 40px; /* Tamaño de fuente */
+  margin: 10px; /* Margen de 10 píxeles alrededor de las tarjetas */
+  flex: 200px 0 0; /* Flexibilidad de las tarjetas */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.cards img {
+  width: 100%; /* Ancho del 100% del contenedor */
+  object-fit: cover; /* Ajuste de la imagen al contenedor */
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.cards-wrapper {
+  display: flex; /* Usa el modelo de caja flexible */
+  transition: ease 0.5s; /* Transición suave */
+}
+
+/* Estilos para el área de visualización */
+.display-area {
+  width: 1100px; /* Ancho fijo de 1100 píxeles */
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+  margin: auto; /* Centra horizontalmente el área de visualización */
+}
+
+/* Estilos para el contenedor de los puntos de navegación */
+.dots-wrapper {
+  display: flex; /* Usa el modelo de caja flexible */
+  justify-content: center; /* Centra horizontalmente los puntos de navegación */
+  margin: auto; /* Centra horizontalmente el contenedor */
+}
+
+/* Estilos para los puntos de navegación */
+.dot {
+  border: none; /* Sin borde */
+  background: rgba(255, 255, 255, 0.5); /* Fondo con transparencia */
+  width: 20px; /* Ancho de 20 píxeles */
+  height: 20px; /* Altura de 20 píxeles */
+  margin: 5px; /* Margen de 5 píxeles entre los puntos */
+  border-radius: 50%; /* Borde redondeado */
+  outline: none; /* Sin contorno */
+}
+
+/* Estilos para el efecto hover en los puntos */
+.dot:hover {
+  background: rgba(255, 255, 255, 0.75); /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el punto activo */
+.dot.active {
+  background: rgba(255, 255, 255, 1); /* Color completo para el punto activo */
+}

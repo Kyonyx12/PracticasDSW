@@ -1,0 +1,73 @@
+/* Estilos para el cuerpo de la página */
+body {
+  box-shadow: none; /* Quita la sombra del cuerpo */
+  backdrop-filter: blur(200px); /* Aplica un efecto de desenfoque al fondo */
+}
+
+/* Estilos para el contenedor principal */
+main {
+  display: flex; /* Hace que el contenedor sea un flex container */
+  flex-direction: column; /* Columnas para los elementos hijos */
+  align-items: center; /* Centra los elementos horizontalmente */
+  height: 87.5vh; /* Altura del contenedor principal */
+  background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+}
+
+/* Estilos para el contenedor con clase 'glass-container' */
+.glass-container {
+  border-radius: 10px; /* Radio del borde del contenedor */
+  margin-bottom: auto; /* Margen inferior automático */
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para los párrafos */
+p {
+  color: #fff; /* Color del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+/* Estilos para el botón de borrar */
+.button-borrar {
+  padding: 5px 15px; /* Relleno del botón */
+  margin-bottom: 10px; /* Margen inferior */
+  background: red; /* Fondo rojo */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  cursor: pointer; /* Cursor */
+}
+
+/* Estilos para el botón de modificar */
+.button-modificar {
+  padding: 5px 15px; /* Relleno del botón */
+  margin-bottom: 10px; /* Margen inferior */
+  background: blue; /* Fondo azul */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Radio del borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  cursor: pointer; /* Cursor */
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Colapso de borde de la tabla */
+  text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para las celdas de encabezado y datos de la tabla */
+th, td {
+  padding: 7px 0; /* Relleno vertical y sin relleno horizontal */
+  border: 1px solid #fff; /* Borde de 1px sólido */
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+  font-weight: bold; /* Peso del texto */
+}

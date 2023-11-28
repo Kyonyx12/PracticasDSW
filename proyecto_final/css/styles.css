@@ -1,0 +1,50 @@
+/* Importa la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos de reseteo para eliminar márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente para todo el documento */
+    background-image: url("https://assets.editorial.aetnd.com/uploads/2013/07/gettyimages-1390815938.jpg"); /* Imagen de fondo */
+    background-size: cover; /* Ajuste para cubrir el fondo */
+    color: white; /* Color del texto */
+    box-shadow: inset 0px -150px 50px rgba(0, 0, 0, 0.7); /* Sombra en el borde inferior */
+}
+
+/* Estilos para el encabezado */
+header {
+    height: 6vh; /* Altura del encabezado */
+}
+
+/* Estilos para la lista no ordenada */
+ul {
+    display: flex; /* Usa el modelo de caja flexible */
+    flex-direction: row; /* Ordena los elementos en fila */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    justify-content: space-evenly; /* Distribuye el espacio entre los elementos */
+    padding: 1rem; /* Relleno interior de 1 rem */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
+
+/* Estilos para el pie de página */
+footer {
+    height: 6vh; /* Altura del pie de página */
+    display: flex; /* Usa el modelo de caja flexible */
+    flex-direction: column; /* Ordena los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+  

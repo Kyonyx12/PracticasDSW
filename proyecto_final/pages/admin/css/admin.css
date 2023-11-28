@@ -1,0 +1,38 @@
+/* Estilos para el contenedor principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh; /* Altura del contenedor principal */
+}
+
+/* Estilos para el contenedor con efecto glassmorphism */
+.glass-container {
+  background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 30vw; /* Ancho máximo */
+  margin-bottom: auto; /* Margen inferior automático */
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Estilos para el texto del párrafo */
+p {
+  color: #fff; /* Color del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+/* Estilos para el botón */
+button {
+  width: 100%; /* Ancho completo */
+  font-size: 20px; /* Tamaño de fuente del botón */
+  margin-top: 10px; /* Margen superior */
+}

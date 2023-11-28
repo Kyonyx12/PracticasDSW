@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="uft-8">
+        <link href="../../css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./css/registro.css">
+    </head>
+<body>
+  <header>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <!-- Enlaces de navegación -->
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../pages/historia/historia.html">Historia</a></li>
+            <li><a href="../../pages/lugares/lugares.html">Lugares turísticos</a></li>
+            <li><a href="../../pages/platillos/platillos.html">Platillos</a></li>
+            <li><a href="../../pages/contacto/contacto.html">Contacto</a></li>
+            <li><a href="../../pages/registro/registro.html">Registrarse</a></li>
+            <li><a href="../../pages/admin/admin.php">Admin</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Encabezado centrado para el formulario de registro -->
+    <h1 align="center" style="color: white;">Registrarse</h1>
+    
+    <!-- Contenedor con efecto de vidrio para el formulario -->
+    <div class="glass-container">
+      <!-- Formulario de registro -->
+      <form
+        action="../../php/logica.php"
+        method="POST"
+        onsubmit="return validarDatos();"
+        enctype="multipart/form-data"
+        id="formulario"
+      >
+        <!-- Tabla para organizar los campos del formulario -->
+        <table>
+          <!-- Primera fila de la tabla -->
+          <tr>
+            <!-- Campo para ingresar el nombre -->
+            <td>
+              <label for="nombre">NOMBRE: <br />
+                <input
+                  type="text"
+                  name="nombre"
+                  value=""
+                  required
+                  id="nombre"
+                  style="width: 187px"
+                />
+              </label>
+            </td>
+            <!-- Campo para ingresar los apellidos -->
+            <td>
+              <label for="apellidos">APELLIDOS: <br />
+                <input
+                  type="text"
+                  name="apellidos"
+                  value=""
+                  required
+                  id="apellidos"
+                  style="width: 187px"
+                />
+              </label>
+            </td>
+          </tr>
+          <!-- Segunda fila de la tabla -->
+          <tr>
+            <!-- Campo para ingresar la edad -->
+            <td>
+              <label for="edad">EDAD: <br />
+                <input
+                  type="number"
+                  name="edad"
+                  value=""
+                  required
+                  id="edad"
+                  min="18"
+                  max="60"
+                  style="width: 187px"
+                />
+              </label>
+            </td>
+            <!-- Campo para seleccionar el sexo -->
+            <td>
+              <label for="sexo">SEXO: <br />
+                <select name="sexo" style="width: 190px" required>
+                  <option selected>FEMENINO</option>
+                  <option>MASCULINO</option>
+                  <option>OTRO</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <!-- Tercera fila de la tabla -->
+          <tr>
+            <!-- Campo para seleccionar la ciudad -->
+            <td>
+              <label for="ciudad">CIUDAD: <br />
+                <select
+                  id="ciudad"
+                  name="ciudad"
+                  onchange="habilitar()"
+                  style="width: 190px"
+                  required
+                >
+                  <option>ENSENADA</option>
+                  <option>TIJUANA</option>
+                  <option>MEXICALI</option>
+                  <option>TECATE</option>
+                  <option>ROSARITO</option>
+                </select>
+              </label>
+            </td>
+            <!-- Campo para ingresar el número de celular -->
+            <td>
+              <label for="celular">CELULAR: (10 DIGITOS) <br />
+                <input
+                  type="tel"
+                  name="celular"
+                  value=""
+                  maxlength="10"
+                  required
+                  id="celular"
+                  style="width: 187px"
+                />
+              </label>
+            </td>
+          </tr>
+          <!-- Cuarta fila de la tabla -->
+          <tr>
+            <!-- Campo para seleccionar si se utilizará transporte -->
+            <td>
+              <label for="transporte">TRANSPORTE: <br />
+                <select
+                  id="transporte"
+                  name="transporte"
+                  style="width: 190px"
+                  required
+                >
+                  <option selected>NO</option>
+                  <option>SI</option>
+                </select>
+              </label>
+            </td>
+            <!-- Campo para ingresar comentarios -->
+            <td>
+              <label for="comentarios">COMENTARIOS: <br />
+                <input
+                  type="text"
+                  name="comentarios"
+                  required
+                  id="comentarios"
+                  style="width: 190px; height: 50px;"
+                >
+              </label>
+            </td>
+          </tr>
+          <!-- Quinta fila de la tabla -->
+          <tr>
+            <!-- Campo para seleccionar si se necesita camisa -->
+            <td>
+              <label for="camisa">CAMISA: <br />
+                <select
+                  id="camisa"
+                  name="camisa"
+                  onchange="aparecer()"
+                  style="width: 190px"
+                  required
+                >
+                  <option>SI</option>
+                  <option selected>NO</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <!-- Sexta fila de la tabla (oculta inicialmente) -->
+          <tr id="talla-tr" class="talla">
+            <!-- Campo para seleccionar la talla de camisa -->
+            <td>
+              <label for="talla">TALLA: <br />
+                <select name="talla" style="width: 187px">
+                  <option>CHICA</option>
+                  <option>MEDIANA</option>
+                  <option>GRANDE</option>
+                  <option selected>NINGUNA</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+        </table>
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" name="button">ENVIAR</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <!-- Información de derechos de autor -->
+    <p>Copyright &copy; 2023</p>
+    <p>Todos los derechos reservados @Antonio Lopez, @Karen Orozco</p>
+  </footer>
+    <!-- Script de JavaScript -->
+  <script type="text/javascript" src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Estilos para el contenedor principal 'main' */
+main {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Dirección de los elementos: columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontal y verticalmente */
+  height: 88vh; /* Altura del 88% del viewport */
+}
+
+/* Estilos para los botones */
+button {
+  width: 100%; /* Ancho del 100% */
+  font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Estilos para el campo de texto */
+input[type="text"] {
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Clase para ocultar el elemento 'talla' */
+.talla {
+  visibility: hidden; /* Oculta el elemento */
+}
+
+/* Estilos para el contenedor 'sitio' */
+.sitio {
+  display: flex; /* Usa flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+  flex-direction: row; /* Dirección de los elementos: fila */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para el contenedor de vidrio ('glass-container') */
+.glass-container {
+  background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+  backdrop-filter: blur(5px); /* Aplica desenfoque */
+  padding: 2.5rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 30vw; /* Ancho máximo del 30% del viewport */
+  margin: 2vh 5rem; /* Márgenes superior e inferior de 2%, laterales de 5rem */
+  margin-bottom: 2rem; /* Margen inferior adicional */
+  margin-top: 5rem; /* Margen superior adicional */
+}
+
+/* Estilos para las imágenes */
+.img {
+  height: 280px; /* Altura de las imágenes */
+  width: 420px; /* Ancho de las imágenes */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los párrafos */
+p {
+  color: #fff; /* Color del texto: blanco */
+  text-align: justify; /* Alineación del texto: justificado */
+}

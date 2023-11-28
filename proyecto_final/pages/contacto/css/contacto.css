@@ -1,0 +1,43 @@
+/* Estilos para el contenedor principal */
+main {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Dirección de los elementos: columna */
+  justify-content: center; /* Centra verticalmente */
+  height: 88vh; /* Altura del 88% del viewport */
+}
+
+/* Estilos para el contenedor 'sitio' */
+.sitio {
+  display: flex; /* Usa flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+  flex-direction: row; /* Dirección de los elementos: fila */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para el contenedor de vidrio ('glass-container') */
+.glass-container {
+  background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+  backdrop-filter: blur(5px); /* Aplica desenfoque */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 30vw; /* Ancho máximo del 30% del viewport */
+  margin: 2vh 5rem; /* Márgenes superior e inferior de 2% y laterales de 5rem */
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Dirección de los elementos: columna */
+  align-items: center; /* Centra horizontalmente */
+}
+
+/* Estilos para las imágenes */
+.img {
+  height: 280px; /* Altura de la imagen */
+  width: 100%; /* Ancho del 100% del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los párrafos */
+p {
+  color: #fff; /* Color del texto: blanco */
+  text-align: justify; /* Alineación del texto: justificado */
+  margin: 0.14rem; /* Márgenes del párrafo */
+}

@@ -1,0 +1,40 @@
+/* Estilos para el contenedor principal */
+main {
+    height: 88vh; /* Altura del 88% del viewport */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: auto; /* Centra horizontalmente */
+}
+
+/* Estilos para la imagen con id 'img-1' */
+#img-1 {
+    margin: auto 5rem; /* Márgenes superior e inferior automáticos, laterales de 5rem */
+}
+
+/* Estilos para la imagen con id 'img-3' */
+#img-3 {
+    margin: auto 5rem; /* Márgenes superior e inferior automáticos, laterales de 5rem */
+}
+
+/* Estilos generales para las imágenes */
+.img {
+    height: 180px; /* Altura de las imágenes */
+    width: 300px; /* Ancho de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenedor de vidrio ('glass-container') */
+.glass-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+    backdrop-filter: blur(5px); /* Aplica desenfoque */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 60vw; /* Ancho máximo del 60% del viewport */
+    margin: 2vh 5rem; /* Márgenes superior e inferior de 2%, laterales de 5rem */
+}
+
+/* Estilos para los párrafos */
+p {
+    color: #fff; /* Color del texto: blanco */
+    text-align: justify; /* Alineación del texto: justificado */
+}
